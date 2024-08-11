@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+}
+
+.container{
+    background-color: hsl(226, 43%, 10%);
+    padding: 3em 0;
+}
+
+@media screen and (min-width: 1000px) {
+    .container{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: .25fr 1fr;
+        height: 100vh;
+        width: 80vw;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Header and profile */
+header{
+   background-color: #1C204B; 
+   color: #fff;
+   width: 90vw;
+   margin: 0 auto;
+   border-radius: 15px;
+   margin-bottom: 2em;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5747EA;
+    gap: 1em;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.profile img{
+    width: 25%;
+    border: #fff 6px solid;
+    border-radius: 50%;
+}
+
+.user_info p{
+    color: #BBC0FF;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: #7078C9;
+    padding: 1em;
+}
+
+ul .active{
+    color: #fff;
+}
+
+@media screen and (min-width: 1000px){
+    header{
+        width: 100%;
+        align-items: center;
+        height: 100%;
+    }
+
+    .profile{
+        flex-direction: column;
+        align-items: start;
+        padding: 2em;
+        height: 60%;
+    }
+
+    .profile img{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 2.5em;
+        font-weight: 100;
+        width: 50%;
+        line-height: 1.25em;
+    }
+
+    ul{
+        flex-direction: column;
+        padding: 2em;
+    }
+  
+}
+
+/* Habit trackers */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.health_habits{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 15px;
+    padding: 0 ;
+    position: relative;
+}
+
+.habit_image{
+    align-self: flex-end;
+    width: 100px;
+    height: 80px;
+    padding-right: 1em;
+}
+
+.health_habits article{
+    display: flex;
+    justify-content: space-between;
+    width: auto; 
+    gap: .5em;
+    border-radius: 15px;
+}
+
+.habit_card{
+    padding: 0;
+}
+
+
+.habit_info{
+    background-color: #1C204B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -7%;
+    padding: 2em 1em; 
+}
+
+
+
+h2{
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.current_hours{
+    font-size: 2rem;
+    font-weight: 100;
+    align-self: flex-start;
+}
+
+.previous_hours{
+    font-size: 0.9375;
+    font-weight: 200;
+    color: #BBC0FF;
+}
+
+.text_ellipsis{
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 1000px){
+ main{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+ }
+
+ .health_habits{
+    width: 90%;
+    flex-direction: column;
+ }
+
+ .habit_info{
+    margin-top: -5%;
+ }
+
+ .habit_cards{
+    flex-direction: column;
+ }
+ 
+ .current_hours{
+    font-size: 3.5rem;
+ }
+  
+ .card_top{
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2em;
+ }
+
+}

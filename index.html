@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<section class="container">
+  <header>
+    <article class="profile">
+      <img src="./images/image-jeremy.png" alt="Jeremy Profile">
+      <article class="user_info">
+        <p >Report for</p>
+        <h1>Jeremy Robson</h1>
+      </article>
+      
+    </article>
+    <ul>
+      <li id="daily"> Daily </li>
+      <li id="weekly" class="active"> Weekly </li>
+      <li id="monthly"> Monthly </li>
+    </ul>
+  </header>
+    <main>
+    <section class="health_habits">  
+      <!-- the image becomes dynamic -->
+      <img class="habit_image" src="./images/icon-work.svg" alt="">  
+  
+      <article class="habit_info">
+        <article class="habit_cards">
+          <h2 >Work </h2>
+          <img class="text_ellipsis" src="./images/icon-ellipsis.svg" alt="">
+        </article>
+        <article class="habit_cards">
+          <p class="current_hours">32hrs</p>
+          <p class="previous_hours"> Last Week - 36hrs </p><!-- weekly -->
+        </article>
+    </section>
+    </main>
+</section>
+
+
+</body>
+</html>
